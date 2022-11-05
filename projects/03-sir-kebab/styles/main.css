@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+
+/***** Navigation *****/
+.navigation {
+    height: 35vh;
+    width: 100%;
+    background-color: #7A4069;
+    color: #FFC18E;
+    position: fixed;
+    border-bottom: solid 4px #FFC18E;
+    z-index: 100;
+    display: none;
+}
+
+.links {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    row-gap: 10px;
+    font-size: 25px;
+    z-index: 200;
+}
+
+.oneLink {
+    text-decoration: none;
+    color: #FFC18E;
+}
+
+.oneLink:hover {
+    color: #CA4E79;
+    transition: all 0.7s;
+}
+
+.mobileBackground {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: right;
+}
+
+.mobileIcon {
+    cursor: pointer;
+    margin-right: 3%;
+    margin-top: 1.5%;
+}
+/***** Header Section *****/
+.headSection {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/barbecue.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5%;
+}
+
+.headHeading {
+    color: #FFC18E;
+    font-size: 100px;
+    text-align: center;
+    padding: 0;
+}
+
+.headParagraph {
+    color: #FFC18E;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+}
+
+/***** Arrow *****/
+.gg-push-chevron-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(var(--ggs,1));
+    color: #FFC18E;
+}
+
+.gg-push-chevron-down:hover {
+    color: #CA4E79;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+   
+.gg-push-chevron-down::after,
+.gg-push-chevron-down::before {
+    content: "";
+    border-bottom: 10px solid;
+}
+   
+.gg-push-chevron-down::after {
+    width: 50px;
+    height: 50px;
+    border-right: 10px solid;
+    transform: rotate(45deg);
+} 
+
+/***** About Us Section *****/
+.aboutUs {
+    height: 70vh;
+    background-color: #7A4069;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutUsAll{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFC18E;
+    row-gap: 5%;
+}
+
+.aboutUsHeading {
+    font-size: 60px;
+    text-align: left;
+}
+
+.aboutUsParagraph {
+    font-size: 20px;
+    text-align: center;
+}
+
+/***** Price list Section *****/
+.priceList {
+    height: 100vh;
+    background-color: #FFC18E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rectangel {
+    height: 60%;
+    width: 25%;
+    background-color: #7A4069;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFC18E;
+    padding: 2%;
+    border-radius: 12px;
+    /* margin: 3% 0; */
+}
+
+.priceListHeading {
+    margin-bottom: 10%;
+    font-size: 40px;
+}
+
+.allParagraphs {
+    margin-bottom: 10%;
+    font-size: 16px;
+}
+
+.rectangel:hover {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/barbecue.jpg");
+    border: solid 6px #7A4069;
+    transition: all 0.7s;
+}
+
+/***** Photogallery Section *****/
+.photoGallery {
+    height: 100vh;
+    background-color: #7A4069;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kebab {
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5%;
+}
+
+.onePhoto {
+    width: 350px;
+    height: 300px;
+    border: 5px solid #FFC18E;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.onePhoto:hover {
+    border: 5px solid #CA4E79;
+    transition: all 0.7s;
+}
+
+/***** Contact Section *****/
+.contact {
+    height: 100vh;
+    background-color: #FFC18E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 350px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7A4069;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.box h1 {
+    color: #FFC18E;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.box input[type="text"], .box input[type="email"], textarea {
+    border: 2px solid #FFC18E;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px 10px;
+    width: 200px;
+    color: #CA4E79;
+    border-radius: 24px;
+    outline: none;
+}
+
+.box input[type="text"]:focus, .box input[type="email"]:focus, textarea:focus {
+    width: 250px;
+    border-color: #CA4E79;
+    transition: all 0.5s;
+}
+
+.box input[type="submit"] {
+    border: 2px solid #FFC18E;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: #FFC18E;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+    border-color: #CA4E79;
+    color: #CA4E79;
+    transition: all 0.5s;
+}
+
+/***** Footer *****/
+footer {
+    background-color: #7A4069;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFC18E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

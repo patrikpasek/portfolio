@@ -1,0 +1,29 @@
+@media only screen and (max-width: 950px){
+    /***** Price list Section *****/
+    .priceList {
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 3%;
+    }
+
+    .rectangel {
+        width: 40%;
+        height: 30%
+    }
+
+    /***** Photogallery Section *****/
+    .photoGallery {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .onePhoto {
+        width: 100%;
+        height: 40%;
+    }
+}
+
+
+
+
+

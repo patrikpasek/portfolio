@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/P.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/css/query.css">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="scroll-menu">
+                <a href="#home" class="home">DOMŮ</a>
+                <a href="#projects" class="projects">PROJEKTY</a>
+                <a href="#contact" class="contact">KONTAKT</a>
+            </div>
+        </nav>
+        <div class="full-size-content">
+            <div class="full-size-text">
+                <h1>PATRIK PAŠEK</h1>
+                <p>Jsem začínající junior front-end developer.
+                    Většinu svého volného času věnuji zdokonalování se v technické a estetické úpravě webových stránek, s kterou se rozvíjí kvalita mé práce.
+                    <br>
+                    Používám jazyk css a preprocesor scss, dále nedám dopustit na Javascript a jeho knihovny či frameworky.
+                    <br>
+                    Příklady mých projektů naleznete níže.
+                    V případě zájmu či dotazu se na mě neváhejte obrátit.
+                    Budu se těšit na případnou spolupráci!</p>
+                <a href="#projects" class="more">Více</a>
+            </div>
+            <div class="full-size-img">
+                <img src="images/man.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="full-size-projects scroll-projects">
+            <a href="projects/01-cube/index.html" target="_blank">
+                <div class="rectengel cube">
+                    <h2>3D Cube</h2>
+                    <p class="click">Click me</p>
+                </div>
+            </a>
+            <a href="projects/04-wave-roleplay/index.html" target="_blank">
+                <div class="rectengel wave">
+                    <h2>Wave roleplay</h2>
+                    <p class="click">Click me</p>
+                </div>
+            </a>
+            <a href="projects/03-sir-kebab/index.html" target="_blank">
+                <div class="rectengel kebab">
+                    <h2>Sir kebab</h2>
+                    <p class="click">Click me</p>
+                </div>
+            </a>
+        </section>
+        <section class="full-size-contact scroll-contact">
+            <form action="scripts/php/mailer.php" method="post" class="box">
+                <h3>Kontakt</h3>
+                <input type="text" name="name" placeholder="Jméno a přijmení">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" cols="25" rows="10"></textarea>
+                <input type="submit" value="Odeslat">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 made with love ❤️ Patrik Pasek</p>
+    </footer>
+    <script src="scripts/js/scroll.js"></script>
+</body>
+</html>

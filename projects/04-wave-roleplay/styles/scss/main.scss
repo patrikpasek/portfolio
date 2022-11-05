@@ -1,0 +1,397 @@
+@import "variables";
+@import "arrow";
+@import "slide-show";
+@import "form";
+
+///////////////
+// Header
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#00000080, $background-color), url("../../images/gta.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+///////////////
+// Logo
+.full-size-logo {
+    width: 20%;
+    height: 15vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logo-min {
+    width: 100px;
+}
+
+///////////////
+// Panel
+.full-size-panel{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.panel {
+    height: 250px;
+    width: 60px;
+    position: fixed;
+    background-color: $font-color;
+    border-radius: 0 20px 20px 0;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 6%;
+    z-index: 1;
+}
+
+///////////////
+// Navigation
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: $background-color;
+    z-index: 2;
+    display: none;
+}
+
+.scroll-menu {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3%;
+    z-index: 2;
+}
+
+nav a {
+    font-size: 40px;
+    color: $font-color;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    color: $second-color;
+}
+
+.full-size-hamburger {
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 5%;
+}
+
+.icon-hamburger {
+    position: fixed;
+    cursor: pointer;
+    z-index: 2;
+}
+
+///////////////
+// Header heading
+.full-size-heading {
+    height: 70vh;
+    width: 100%;
+    padding: 4.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-size-text{
+    height: 70vh;
+    width: 50%;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: $font-color;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.header-paragraph {
+    color: $font-color;
+}
+
+///////////////
+// Video
+.full-size-video {
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+video {
+    height: 260px;
+    width: 450px;
+    border-radius: 40px 0 40px 0;
+    z-index: 1;
+}
+
+.full-size-arrowUp {
+    height: 5vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    padding-right: 5%;
+
+    .arrowUp {
+        color: $font-color;
+        text-decoration: none;
+        z-index: 2;
+        display: none;
+    }
+}
+
+///////////////
+// Sesction 1 Discord
+.full-size-discord {
+    height: 100vh;
+    width: 100%;
+    padding: 0 5%;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-discord-text {
+    width: 1000px;
+    height: 500px;
+    padding: 3%;
+    color: $background-color;
+    background-color: $font-color;
+    border: 3px solid $font-color;
+    border-radius: 40px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10%;
+
+    h3 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: $background-color;
+        padding: 15px 40px;
+        border: 2px solid $background-color;
+        border-radius: 40px;
+        transition: all 0.5s;
+    }
+
+    a:hover {
+        color: $font-color;
+        background-color: $background-color;
+    }
+}
+
+///////////////
+// Section 2 About Us
+.full-size-aboutUs{
+    height: 100vh;
+    width: 100%;
+    padding: 0 5%;
+    background-color: $background-color;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.full-aboutUs-text {
+    width: 30%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 3px solid $font-color;
+    border-radius: 40px 0 40px 0;
+    color: $font-color;
+
+    h3 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
+///////////////
+// Section 3 Team
+.full-size-team {
+    height: 120vh;
+    width: 100%;
+    padding: 10%;
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5%;
+}
+
+.player {
+    height: 250px;
+    width: 500px;
+    color: $background-color;
+    background-color: $font-color;
+    border: $background-color;
+    border-radius: 40px 0 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h3 {
+        font-weight: 500;
+        font-size: 35px;
+        border: 5px solid $background-color;
+        padding: 3%;
+        border-radius: 0 40px 0 40px;
+    }
+}
+
+.ring {
+    height: 150px;
+    width: 150px;
+    background-color: $font-color;
+    border: 5px solid $background-color;
+    border-radius: 50%;
+}
+
+.player:hover .ring{
+    box-shadow: 8px 8px $background-color;
+    transition: all 0.5s;
+}
+
+.owners {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.developers {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+///////////////
+// Section 4 Rules
+.full-size-rules {
+    height: 100vh;
+    width: 100%;
+    padding: 10%;
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+    height: 500px;
+    width: 90%;
+    margin: 5%;
+    padding: 5%;
+    background-color: $font-color;
+    color: $background-color;
+    border-radius: 40px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10%;
+
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: $background-color;
+        padding: 15px 40px;
+        border: 2px solid $background-color;
+        border-radius: 40px;
+        transition: all 0.5s;
+    }
+
+    a:hover {
+        color: $font-color;
+        background-color: $background-color;
+    }
+}
+
+.paragraph-rules {
+    font-weight: 500;
+    color: $background-color;
+}
+
+///////////////
+// Section 5 Contact
+.full-size-contact {
+    height: 100vh;
+    width: 100%;
+    background-color: $background-color;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h5 {
+        font-weight: 600;
+        margin: 5%;
+    }
+}
+
+.full-form-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    padding: 2%;
+    color: $font-color;
+    border: 3px solid $font-color;
+    border-radius: 40px 0 40px 0;
+}
+
+///////////////
+// Footer
+footer {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $font-color;
+    background-color: $background-color;
+}
+
+footer p {
+    font-size: 0.6rem;
+}

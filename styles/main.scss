@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "partials/variables";
+@import "partials/form";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 10%;
+    background-color: $first-color;
+    overflow: hidden;
+
+    nav {
+        .scroll-menu {
+            min-height: 10vh;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 3%;
+
+            a {
+                text-decoration: none;
+                color: $second-color;
+                font-size: 23px;
+                transition: all 0.5s;
+                font-weight: 300;
+            }
+
+            a:hover {
+                color: $fourth-color;
+            }
+        }
+    }
+
+    .full-size-content {
+        min-height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .full-size-text {
+            min-height: 80vh;
+            width: 50%;
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            row-gap: 20px;
+
+            h1 {
+                color: $second-color;
+                font-weight: 700;
+                letter-spacing: 8px;
+            }
+
+            p {
+                color: $second-color;
+            }
+
+            a {
+                color: $second-color;
+                background-color: $third-color;
+                text-decoration: none;
+                border-radius: 0 40px 0 40px;
+                border: 2px solid $third-color;
+                width: 100px;
+                font-size: 20px;
+                padding: 14px 20px;;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.5s;
+            }
+
+            a:hover {
+                background-color: $first-color;
+                border: 2px solid $third-color;
+                color: $third-color;
+            }
+        }
+
+        .full-size-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 500px;
+            }
+        }
+    }
+}
+
+main {
+    padding: 0 10%;
+    background-color: $first-color;
+
+    .full-size-projects {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+        }
+
+        .rectengel {
+            height: 500px;
+            width: 350px;
+            padding: 5%;
+            background-color: $third-color;
+            border-radius: 40px;
+            transition: all 0.7s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            h2 {
+                text-decoration: none;
+                color: $second-color;
+                text-decoration: none;
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            .click {
+                display: none;
+                text-decoration: none;
+                color: $second-color;
+                font-size: 25px;
+                font-weight: 300;
+                transition: all 0.5s;
+            }
+        }
+
+        .cube:hover {
+            background-image: url("../images/3DCube.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+
+            h2 {
+                display: none;
+            }
+
+            .click {
+                display: block;
+            }
+        }
+
+        .wave:hover {
+            background-image: url("../images/gta.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+
+            h2 {
+                display: none;
+            }
+
+            .click {
+                display: block;
+            }
+        }
+
+        .kebab:hover {
+            background-image: url("../images/barbecue.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+
+            h2 {
+                display: none;
+            }
+
+            .click {
+                display: block;
+            }
+        }
+    }
+
+    .full-size-contact {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+footer {
+    min-height: 5vh;
+    width: 100%;
+    padding: 0 10%;
+    background-color: $first-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: $second-color;
+    }
+}

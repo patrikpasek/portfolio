@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+.box {
+  height: 600px;
+  width: 350px;
+  padding: 40px;
+  border-radius: 40px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #3F0071;
+  text-align: center;
+}
+
+.box h3 {
+  font-size: 20px;
+  color: #EEEEEE;
+  font-weight: 500;
+}
+
+.box input[type=text], .box input[type=email], textarea {
+  border: 2px solid #EEEEEE;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px 10px;
+  width: 200px;
+  font-size: 14px;
+  color: #EEEEEE;
+  border-radius: 24px;
+  outline: none;
+}
+
+.box input[type=text]:focus, .box input[type=email]:focus, textarea:focus {
+  width: 250px;
+  border-color: #FB2576;
+  transition: all 0.5s;
+}
+
+.box input[type=submit] {
+  border: 2px solid #EEEEEE;
+  font-size: 15px;
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  padding: 14px 40px;
+  width: 200px;
+  outline: none;
+  color: #EEEEEE;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.box input[type=submit]:hover {
+  background-color: #EEEEEE;
+  color: #3F0071;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 10%;
+  background-color: #000;
+  overflow: hidden;
+}
+header nav .scroll-menu {
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+}
+header nav .scroll-menu a {
+  text-decoration: none;
+  color: #EEEEEE;
+  font-size: 23px;
+  transition: all 0.5s;
+  font-weight: 300;
+}
+header nav .scroll-menu a:hover {
+  color: #FB2576;
+}
+header .full-size-content {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+header .full-size-content .full-size-text {
+  min-height: 80vh;
+  width: 50%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+header .full-size-content .full-size-text h1 {
+  color: #EEEEEE;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+header .full-size-content .full-size-text p {
+  color: #EEEEEE;
+}
+header .full-size-content .full-size-text a {
+  color: #EEEEEE;
+  background-color: #3F0071;
+  text-decoration: none;
+  border-radius: 0 40px 0 40px;
+  border: 2px solid #3F0071;
+  width: 100px;
+  font-size: 20px;
+  padding: 14px 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+header .full-size-content .full-size-text a:hover {
+  background-color: #000;
+  border: 2px solid #3F0071;
+  color: #3F0071;
+}
+header .full-size-content .full-size-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .full-size-content .full-size-img img {
+  width: 500px;
+}
+
+main {
+  padding: 0 10%;
+  background-color: #000;
+}
+main .full-size-projects {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .full-size-projects a {
+  text-decoration: none;
+}
+main .full-size-projects .rectengel {
+  height: 500px;
+  width: 350px;
+  padding: 5%;
+  background-color: #3F0071;
+  border-radius: 40px;
+  transition: all 0.7s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .full-size-projects .rectengel h2 {
+  text-decoration: none;
+  color: #EEEEEE;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 700;
+}
+main .full-size-projects .rectengel .click {
+  display: none;
+  text-decoration: none;
+  color: #EEEEEE;
+  font-size: 25px;
+  font-weight: 300;
+  transition: all 0.5s;
+}
+main .full-size-projects .cube:hover {
+  background-image: url("../images/3DCube.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+main .full-size-projects .cube:hover h2 {
+  display: none;
+}
+main .full-size-projects .cube:hover .click {
+  display: block;
+}
+main .full-size-projects .wave:hover {
+  background-image: url("../images/gta.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+main .full-size-projects .wave:hover h2 {
+  display: none;
+}
+main .full-size-projects .wave:hover .click {
+  display: block;
+}
+main .full-size-projects .kebab:hover {
+  background-image: url("../images/barbecue.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+main .full-size-projects .kebab:hover h2 {
+  display: none;
+}
+main .full-size-projects .kebab:hover .click {
+  display: block;
+}
+main .full-size-contact {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  min-height: 5vh;
+  width: 100%;
+  padding: 0 10%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #EEEEEE;
+}/*# sourceMappingURL=main.css.map */

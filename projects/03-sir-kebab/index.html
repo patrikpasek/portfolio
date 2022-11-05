@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/queries.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Sir Kebab</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="links">
+                <a href="#" class="oneLink JQ--scroll--aboutUs">O nás</a>
+                <a href="#" class="oneLink JQ--scroll--priceList">Ceník</a>
+                <a href="#" class="oneLink JQ--scroll--photoGallery">Fotogalerie</a>
+                <a href="#" class="oneLink JQ--scroll--contact">Kontakt</a>
+            </div>
+        </nav>
+        <div class="mobileBackground">
+            <div class="mobileIcon JQ--menu"><img src="images/menu.png" alt="" class="JQ--image--icon"></div>
+        </div>
+        <section class="headSection">
+            <div class="hide">
+                <h1 class="headHeading">Sir Kebab</h1>
+                <p class="headParagraph">Nejlepší kebab v Praze</p>
+                <i class="gg-push-chevron-down JQ--scroll--aboutUs"></i>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="aboutUs JQ--aboutUs">
+            <div class="aboutUsAll">
+                <h2 class="aboutUsHeading">O nás</h2>
+                <p class="aboutUsParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur illo magni nesciunt omnis ut, nemo eligendi neque eaque perspiciatis minima, nam a rem, nostrum eos quas excepturi repellat earum ea!</p>
+            </div>
+        </section>
+        <section class="priceList JQ--priceList">
+            <div class="rectangel">
+                <h3 class="priceListHeading">Lorem</h3>
+                <p class="allParagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quam eligendi, velit fugiat, explicabo.</p>
+                <p>Cena: 100 Kč</p>
+            </div>
+            <div class="rectangel">
+                <h3 class="priceListHeading">Lorem</h3>
+                <p class="allParagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quam eligendi, velit fugiat, explicabo.</p>
+                <p>Cena: 100 Kč</p>
+            </div>
+            <div class="rectangel">
+                <h3 class="priceListHeading">Lorem</h3>
+                <p class="allParagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa quam eligendi, velit fugiat, explicabo.</p>
+                <p>Cena: 100 Kč</p>
+            </div>
+        </section>
+        <section class="photoGallery JQ--photoGallery">
+            <div class="kebab">
+                <img src="images/doner.jpg" alt="" class="onePhoto">
+                <img src="images/kebab.jpg" alt="" class="onePhoto">
+            </div>
+            <div class="kebab">
+                <img src="images/food.jpg" alt="" class="onePhoto">
+                <img src="images/middle-eastern-food.jpg" alt="" class="onePhoto">
+            </div>
+        </section>
+        <section class="contact JQ--contact">
+            <form action="mailer.php" method="post" class="box">
+                <h1>Kontakt</h1>
+                <input type="text" placeholder="Jméno a přijmení">
+                <input type="email" placeholder="Email">
+                <textarea name="" cols="25" rows="10"></textarea>
+                <input type="submit" value="Odeslat">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copywrite &copy; 2022 Patrik Pašek</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
